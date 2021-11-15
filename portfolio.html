@@ -11,156 +11,177 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="" lang="en" class="logo link">Web<span class="logo-accent">Studio</span> </a>
+    <header class="header-border">
+      <div class="flex-nav container">
+        <nav class="flex-nav">
+          <a href="" lang="en" class="logo link">Web<span class="logo-accent">Studio</span> </a>
 
-        <ul>
-          <li class="list">
-            <a href="./index.html" class="link site-nav-text">Студия</a>
+          <ul class="flex-nav-menu">
+            <li class="list nav-menu-item">
+              <a href="./index.html" class="link site-nav-text">Студия</a>
+            </li>
+            <li class="list nav-menu-item">
+              <a href="./portfolio.html" class="link site-nav-text current">Портфолио</a>
+            </li>
+            <li class="list nav-menu-item">
+              <a href="" class="link site-nav-text">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="flex-nav-contact">
+          <li class="list nav-contact-item">
+            <a href="mailto:info@devstudio.com" class="link site-contact">info@devstudio.com</a>
           </li>
-          <li class="list">
-            <a href="./portfolio.html" class="link site-nav-text current">Портфолио</a>
-          </li>
-          <li class="list">
-            <a href="" class="link site-nav-text">Контакты</a>
+          <li class="list nav-contact-item">
+            <a href="tel:+380961111111" class="link site-contact">+38 096 111 11 11</a>
           </li>
         </ul>
-      </nav>
-      <ul>
-        <li class="list">
-          <a href="mailto:info@devstudio.com" class="link site-contact">info@devstudio.com</a>
-        </li>
-        <li class="list">
-          <a href="tel:+380961111111" class="link site-contact">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
-      <section>
+      <section class="section">
         <!--Скрытый заголовок-->
-        <h1>Виды работ</h1>
-        <ul>
-          <li class="list">
-            <button type="button" class="button-works button-current">Все</button>
-          </li>
-          <li class="list">
-            <button type="button" class="button-works">Веб-сайты</button>
-          </li>
-          <li class="list">
-            <button type="button" class="button-works">Приложения</button>
-          </li>
-          <li class="list">
-            <button type="button" class="button-works">Дизайн</button>
-          </li>
-          <li class="list">
-            <button type="button" class="button-works">Маркетинг</button>
-          </li>
-        </ul>
-        <ul>
-          <li class="list">
-            <a href="" class="link">
-                <img src="./images/img1.jpg" alt="" width="370" />
-                <h2 class="works-title">Технокряк</h2>
-              <p class="works-text">Веб-сайт</p>
-            </a>
-          </li>
-          <li class="list">
-            <a href="" class="link">
-                <img src="./images/img2.jpg" alt="" width="370" />
-                
-              <h2 class="works-title">
-                Постер
-                <span lang="en">Orlean vs Golden Star</span>
-              </h2>
-              <p class="works-text">Дизайн</p>
-            </a>
-          </li>
-          <li class="list">
-            <a href="" class="link">
-                <img src="./images/img3.jpg" alt="" width="370" />
-                
-              <h2 class="works-title">
-                Ресторан
-                <span lang="en">Seafood</span>
-              </h2>
-              <p class="works-text">Приложение</p>
-            </a>
-          </li>
-          <li class="list">
-            <a href="" class="link"
-            ><img src="./images/img4.jpg" alt="" width="370" />
-            <h2 class="works-title">
-                Проект
-                <span lang="en">Prime</span>
-              </h2>
-              <p class="works-text">Маркетинг</p>
-            </a>
-          </li>
-          <li class="list">
-            <a href="" class="link"
-            ><img src="./images/img5.jpg" alt="" width="370" />
-            <h2 class="works-title">
-                Проект
-                <span lang="en">Boxes</span>
-              </h2>
-              <p class="works-text">Приложение</p>
-            </a>
-          </li>
-          <li class="list">
-            <a href="" class="link">
-                <img src="./images/img6.jpg" alt="" width="370" />
-                <h2 class="works-title" lang="en">Inspiration has no Borders</h2>
-              <p class="works-text">Веб-сайт</p>
-            </a>
-          </li>
-          <li class="list">
-            <a href="" class="link"
-            ><img src="./images/img7.jpg" alt="" width="370" />
-            <h2 class="works-title">
-                Издание
-                <span lang="en">Limited Edition</span>
-              </h2>
-              <p class="works-text">Дизайн</p>
-            </a>
-          </li>
-          <li class="list">
-            <a href="" class="link">
-                <img src="./images/img8.jpg" alt="" width="370" />
-                
-              <h2 class="works-title">
-                Проект
-                <span lang="en">LAB</span>
-              </h2>
-              <p class="works-text">Маркетинг</p>
-            </a>
-          </li>
-          <li class="list">
-            <a href="" class="link">
-              <img src="./images/img9.jpg" alt="" width="370" />
-              <h2 class="works-title" lang="en">Growing Business</h2>
-              <p class="works-text">Приложение</p>
-            </a>
-          </li>
-        </ul>
+        <div class="container">
+          <h1 class="visually-hidden">Виды работ</h1>
+          <ul class="works-buttons">
+            <li class="list work-button-li">
+              <button type="button" class="work-button button-current">Все</button>
+            </li>
+            <li class="list work-button-li">
+              <button type="button" class="work-button">Веб-сайты</button>
+            </li>
+            <li class="list work-button-li">
+              <button type="button" class="work-button">Приложения</button>
+            </li>
+            <li class="list work-button-li">
+              <button type="button" class="work-button">Дизайн</button>
+            </li>
+            <li class="list work-button-li">
+              <button type="button" class="work-button">Маркетинг</button>
+            </li>
+          </ul>
+        </div>
+        <div class="works-container">
+          <ul class="works-items">
+            <li class="list works-item">
+              <a href="" class="link">
+                <img class="works-img" src="./images/img1.jpg" alt="" width="370" />
+                <div class="works-item-bottom">
+                  <h2 class="works-title">Технокряк</h2>
+                  <p class="works-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="list works-item">
+              <a href="" class="link">
+                <img class="works-img" src="./images/img2.jpg" alt="" width="370" />
+                <div class="works-item-bottom">
+                  <h2 class="works-title">
+                    Постер
+                    <span lang="en">Orlean vs Golden Star</span>
+                  </h2>
+                  <p class="works-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="list works-item">
+              <a href="" class="link">
+                <img class="works-img" src="./images/img3.jpg" alt="" width="370" />
+                <div class="works-item-bottom">
+                  <h2 class="works-title">
+                    Ресторан
+                    <span lang="en">Seafood</span>
+                  </h2>
+                  <p class="works-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="list works-item">
+              <a href="" class="link"
+                ><img class="works-img" src="./images/img4.jpg" alt="" width="370" />
+                <div class="works-item-bottom">
+                  <h2 class="works-title">
+                    Проект
+                    <span lang="en">Prime</span>
+                  </h2>
+                  <p class="works-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="list works-item">
+              <a href="" class="link">
+                <img class="works-img" src="./images/img5.jpg" alt="" width="370" />
+                <div class="works-item-bottom">
+                  <h2 class="works-title">
+                    Проект
+                    <span lang="en">Boxes</span>
+                  </h2>
+                  <p class="works-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="list works-item">
+              <a href="" class="link">
+                <img class="works-img" src="./images/img6.jpg" alt="" width="370" />
+                <div class="works-item-bottom">
+                  <h2 class="works-title" lang="en">Inspiration has no Borders</h2>
+                  <p class="works-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="list works-item">
+              <a href="" class="link"
+                ><img class="works-img" src="./images/img7.jpg" alt="" width="370" />
+                <div class="works-item-bottom">
+                  <h2 class="works-title">
+                    Издание
+                    <span lang="en">Limited Edition</span>
+                  </h2>
+                  <p class="works-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="list works-item">
+              <a href="" class="link">
+                <img class="works-img" src="./images/img8.jpg" alt="" width="370" />
+                <div class="works-item-bottom">
+                  <h2 class="works-title">Проект <span lang="en">LAB</span></h2>
+                  <p class="works-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="list works-item">
+              <a href="" class="link">
+                <img src="./images/img9.jpg" alt="" width="370" />
+                <div class="works-item-bottom">
+                  <h2 class="works-title" lang="en">Growing Business</h2>
+                  <p class="works-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <a href="" lang="en" class="logo link">Web<span class="logo-accent-footer">Studio</span> </a>
-      <address>
-        <ul>
-          <li class="footer-map list">г. Киев, пр-т Леси Украинки, 26</li>
-          <li class="list">
-            <a href="mailto:info@devstudio.com" class="footer-contact link">info@devstudio.com</a>
-          </li>
-          <li class="list">
-            <a href="tel:+380961111111" class="footer-contact link">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </address>
+      <div class="container">
+        <a href="./index.html" lang="en" class="footer-logo link">Web<span class="logo-accent-footer">Studio</span> </a>
+        <address>
+          <ul>
+            <li class="footer-map list footer-adress">г. Киев, пр-т Леси Украинки, 26</li>
+            <li class="list footer-adress">
+              <a href="mailto:info@devstudio.com" class="footer-contact link">info@devstudio.com</a>
+            </li>
+            <li class="list footer-adress">
+              <a href="tel:+380961111111" class="footer-contact link">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
