@@ -1091,7 +1091,7 @@ img {
 }
 
 .icon-x {
-  fill: #000;
+  fill: #000000;
   -webkit-transition: fill var(--animation-duration) var(--timing-function);
   transition: fill var(--animation-duration) var(--timing-function);
 }
