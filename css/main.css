@@ -1090,14 +1090,14 @@ img {
   outline-color: var(--accent-color);
 }
 
-.icon-x {
-  fill: #000000;
+.icon-x1 {
+  fill: #000;
   -webkit-transition: fill var(--animation-duration) var(--timing-function);
   transition: fill var(--animation-duration) var(--timing-function);
 }
 
-.hero-modal__close-btn:hover .icon-x,
-.hero-modal__close-btn:focus .icon-x {
+.hero-modal__close-btn:hover .icon-x1,
+.hero-modal__close-btn:focus .icon-x1 {
   fill: var(--accent-color);
 }
 
