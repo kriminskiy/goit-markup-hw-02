@@ -1,15 +1,29 @@
 .logo {
 	font-family: Raleway;
-	font-size: 26px;
+	font-size: 24px;
 	font-weight: 700;
-	line-height: 1.19;
+	line-height: 1.16;
 	color: var(--accent-color);
+
+	@media screen and (min-width: 1200px) {
+		font-size: 26px;
+		line-height: 1.19;
+	}
 }
 
 //------nav------
 
 .logo-nav {
-	padding: 24px 0;
+	display: flex;
+	padding: 16px 0;
+
+	@media screen and (min-width: 768px) {
+		padding: 26px 0;
+	}
+
+	@media screen and (min-width: 1200px) {
+		padding: 24px 0;
+	}
 }
 
 .logo-nav--accent {
@@ -28,6 +42,17 @@
 .footer-logo {
 	display: block;
 	margin-bottom: 20px;
+	text-align: center;
+
+	@media screen and (min-width: 480px) {
+	}
+
+	@media screen and (min-width: 768px) {
+	}
+
+	@media screen and (min-width: 1200px) {
+		text-align: left;
+	}
 }
 
 .footer-logo--accent {

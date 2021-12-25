@@ -2,42 +2,105 @@
 
 .team {
 	background-color: var(--team-bg-color);
+	@media screen and (min-width: 480px) {
+	}
+
+	@media screen and (min-width: 768px) {
+	}
+
+	@media screen and (min-width: 1200px) {
+	}
 }
 
 .team-container {
-	width: 1200px;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin-right: auto;
 	margin-left: auto;
+
+	@media screen and (min-width: 480px) {
+		width: 480px;
+	}
+
+	@media screen and (min-width: 768px) {
+		width: 768px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		width: 1200px;
+	}
 }
 
 .team-title {
 	margin-top: 0;
-	margin-bottom: 50px;
-}
+	margin-bottom: 30px;
 
-.team-list {
-	display: flex;
-	justify-content: center;
-	padding: 0;
-	margin: 0;
-}
-
-.team-item {
-	height: 428px;
-
-	background-color: var(--primary-white-color);
-	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-	border-radius: 0px 0px 4px 4px;
-
-	&:not(:first-child) {
-		margin-left: 30px;
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 50px;
 	}
 }
 
+.team-list {
+	padding: 0;
+	margin: 0;
+
+	@media screen and (min-width: 768px) {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-left: -30px;
+	}
+
+	@media screen and (min-width: 1200px) {
+	}
+}
+
+.team-item {
+	background-color: var(--primary-white-color);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+	margin-bottom: 30px;
+
+	@media screen and (min-width: 480px) {
+		height: 622px;
+		width: 450px;
+	}
+
+	@media screen and (min-width: 768px) {
+		height: 536px;
+		width: 354px;
+
+		height: 536px;
+
+		margin-left: 30px;
+
+		@media screen and (min-width: 1200px) {
+			width: 270px;
+			height: 428px;
+		}
+	}
+}
+
+.team-item__img {
+	width: 100%;
+}
+
 .team-holder {
-	padding: 30px 32px;
+	padding: 30px 0 24px 0;
+	margin-left: auto;
+	margin-right: auto;
+
+	@media screen and (min-width: 480px) {
+		padding: 30px 122px 24px;
+	}
+
+	@media screen and (min-width: 768px) {
+		padding: 30px 74px 24px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		padding: 30px 32px;
+	}
 }
 
 .team-holder__title {
@@ -57,12 +120,19 @@
 }
 
 .team-socials {
-	display: flex;
-	justify-content: space-between;
+	text-align: center;
+
+	@media screen and (min-width: 768px) {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.team-social {
+	display: inline-block;
 }
 
 .team-social__link {
-	display: block;
 	border-radius: 50%;
 	width: 44px;
 	height: 44px;
