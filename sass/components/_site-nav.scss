@@ -1,7 +1,5 @@
 .header-border {
-	@media screen and (min-width: 768px) {
-		border-bottom: 1px solid #ececec;
-	}
+	border-bottom: 1px solid #ececec;
 }
 
 .all-nav {
@@ -145,6 +143,7 @@
 .contact-mail,
 .contact-tel {
 	font-size: 34px;
+
 	line-height: 1.17;
 	letter-spacing: 0.02em;
 	font-weight: 500;
@@ -155,10 +154,18 @@
 
 	transition: color var(--animation-duration) var(--timing-function);
 
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
+
+	@media screen and (max-width: 479px) {
+		font-size: 24px;
+	}
+
 	@media screen and (min-width: 768px) {
 		font-size: 14px;
 		line-height: 1.14;
-		padding-bottom: 10px;
 	}
 
 	@media screen and (min-width: 1200px) {
@@ -171,6 +178,11 @@
 		font-size: 24px;
 		line-height: 1.16;
 	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		padding-top: 21px;
+		margin-bottom: 10px;
+	}
 }
 
 .contact-tel {
@@ -178,16 +190,14 @@
 		color: var(--accent-color);
 		margin-bottom: 32px;
 	}
-	@media screen and (min-width: 768px) {
-		padding-bottom: 0;
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		padding-bottom: 21px;
 	}
 	@media screen and (min-width: 1200px) {
 		padding-bottom: 32px;
 	}
 }
 
-.contact-content:hover,
-.contact-content:focus,
 .current {
 	color: var(--accent-color);
 }
@@ -228,6 +238,7 @@
 	width: 100%;
 	@media screen and (max-width: 767px) {
 		position: fixed;
+		z-index: 2;
 
 		left: 0;
 		top: 0;
@@ -238,6 +249,8 @@
 		background-color: var(--primary-white-color);
 
 		transform: translateX(100%);
+
+		transition: transform var(--animation-duration) var(--timing-function);
 	}
 }
 
